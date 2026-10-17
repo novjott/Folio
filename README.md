@@ -116,5 +116,5 @@ with the terms of the licence.
 ---
 
 <p align="center">
-  <strong>Folio — Your notes, your way.</strong>
+  <strong>Folio — Your school notes, your way.</strong>
 </p>
