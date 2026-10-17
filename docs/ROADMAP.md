@@ -47,24 +47,29 @@ No fixed release dates are set at this stage.
 
 ### Tasks
 
-- [ ] Initialise the React and TypeScript application using Vite.
-- [ ] Configure development scripts and dependency management.
-- [ ] Establish the initial source directory structure.
-- [ ] Configure code formatting and linting.
-- [ ] Set up automated tests with Vitest.
-- [ ] Establish the initial responsive application layout.
-- [ ] Add a basic continuous integration workflow.
-- [ ] Document local development requirements and commands.
+- [x] Initialise the React and TypeScript application using Vite.
+- [x] Configure development scripts and dependency management.
+- [x] Establish the initial source directory structure.
+- [x] Configure code formatting and linting.
+- [x] Set up automated tests with Vitest.
+- [x] Establish the initial responsive application layout.
+- [x] Add a basic continuous integration workflow.
+- [x] Document local development requirements and commands.
 
 ### Acceptance Criteria
 
-- [ ] The application runs locally.
-- [ ] The production build completes successfully.
-- [ ] Automated tests can run locally and in CI.
-- [ ] Code formatting and linting are configured.
-- [ ] The repository has a clear and maintainable structure.
+- [x] The application runs locally.
+- [x] The production build completes successfully.
+- [x] Automated tests can run locally and in CI.
+- [x] Code formatting and linting are configured.
+- [x] The repository has a clear and maintainable structure.
 
-**Status:** PLANNED
+**Status:** COMPLETE
+
+Local formatting, lint, component tests, production build and server startup have
+been verified. The CI workflow runs the same checks; its first hosted execution
+remains pending until these changes are uploaded. Real-device compatibility
+testing belongs to Milestone 9.
 
 ---
 

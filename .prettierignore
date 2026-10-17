@@ -1,0 +1,16 @@
+node_modules/
+.npm-cache/
+dist/
+coverage/
+package-lock.json
+assets/
+# Existing planning and community documents keep their original formatting.
+docs/TECHNICAL_SPEC.md
+docs/ROADMAP.md
+docs/DECISIONS/
+CONTRIBUTING.md
+CODE_OF_CONDUCT.md
+SECURITY.md
+CHANGELOG.md
+.github/ISSUE_TEMPLATE/
+.github/PULL_REQUEST_TEMPLATE.md

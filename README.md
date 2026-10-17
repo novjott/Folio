@@ -46,38 +46,72 @@ and is not yet ready for everyday use.
 Folio is planned as a cross-platform application using a shared
 codebase and an installable web application approach.
 
-| Platform | Planned support |
-|---|---|
-| Windows | Desktop and browser |
-| macOS | Desktop and browser |
-| iPadOS | Tablet and stylus |
-| Android tablets | Tablet and stylus |
+| Platform        | Planned support     |
+| --------------- | ------------------- |
+| Windows         | Desktop and browser |
+| macOS           | Desktop and browser |
+| iPadOS          | Tablet and stylus   |
+| Android tablets | Tablet and stylus   |
 
 Platform support and feature compatibility will be verified through
 testing on real devices.
 
 ## Technology Stack
 
-| Technology | Purpose |
-|---|---|
-| React + TypeScript | Application interface and logic |
-| Vite | Build tooling |
-| Tiptap / ProseMirror | Rich-text editor |
-| SVG or Canvas | Handwriting and drawing |
-| IndexedDB + Dexie | Local storage |
-| Supabase + PostgreSQL | Authentication and cloud data |
-| Vitest + Playwright | Testing |
+| Technology            | Purpose                         |
+| --------------------- | ------------------------------- |
+| React + TypeScript    | Application interface and logic |
+| Vite                  | Build tooling                   |
+| Tiptap / ProseMirror  | Rich-text editor                |
+| SVG or Canvas         | Handwriting and drawing         |
+| IndexedDB + Dexie     | Local storage                   |
+| Supabase + PostgreSQL | Authentication and cloud data   |
+| Vitest + Playwright   | Testing                         |
 
 These are the current architectural choices and may evolve during
 development.
 
 ## Development Status
 
+Milestone 1 provides the responsive application shell and development tooling.
+The editor, drawing tools, storage, synchronisation and assignment manager are
+still planned. No backend configuration is needed to run the foundation.
+
+## Local Development
+
+Use **Node.js 22.12 or newer in the Node 22 LTS line**, or Node 24 LTS, with npm.
+The CI workflow uses Node 22. Install dependencies from the committed lockfile:
+
+```sh
+npm ci
+npm run dev
+```
+
+Open the local URL printed by Vite (normally `http://localhost:5173`).
+
+| Command                | Purpose                                          |
+| ---------------------- | ------------------------------------------------ |
+| `npm run dev`          | Start the development server                     |
+| `npm run build`        | Type-check and produce `dist/`                   |
+| `npm run preview`      | Serve the production build locally               |
+| `npm run typecheck`    | Check application, tests and Vite configuration  |
+| `npm run lint`         | Run ESLint with no warnings allowed              |
+| `npm run format`       | Apply Prettier formatting                        |
+| `npm run format:check` | Check formatting without changing files          |
+| `npm test`             | Run Vitest component tests once                  |
+| `npm run test:watch`   | Run Vitest in watch mode                         |
+| `npm run check`        | Run formatting, lint, tests and production build |
+
+CI runs `npm ci` and `npm run check` on pushes and pull requests.
+See [development structure](docs/DEVELOPMENT.md) for code organisation and limits.
+
+## Planned Development
+
 Folio is in the planning and early development stage.
 
 The initial priorities are:
 
-- [ ] Establish the application foundation.
+- [x] Establish the application foundation.
 - [ ] Build the core note editor.
 - [ ] Integrate handwriting and drawing.
 - [ ] Implement reliable local storage and offline access.
@@ -89,13 +123,13 @@ See the [development roadmap](docs/ROADMAP.md) for planned milestones.
 
 ## Documentation
 
-| Document | Purpose |
-|---|---|
+| Document                                          | Purpose                                      |
+| ------------------------------------------------- | -------------------------------------------- |
 | [Technical Specification](docs/TECHNICAL_SPEC.md) | Functional requirements and technical design |
-| [Development Roadmap](docs/ROADMAP.md) | Milestones and implementation plan |
-| [Architecture Decisions](docs/DECISIONS/) | Important design decisions and rationale |
-| [Contributing Guide](CONTRIBUTING.md) | How to contribute to Folio |
-| [Security Policy](SECURITY.md) | How to report security vulnerabilities |
+| [Development Roadmap](docs/ROADMAP.md)            | Milestones and implementation plan           |
+| [Architecture Decisions](docs/DECISIONS/)         | Important design decisions and rationale     |
+| [Contributing Guide](CONTRIBUTING.md)             | How to contribute to Folio                   |
+| [Security Policy](SECURITY.md)                    | How to report security vulnerabilities       |
 
 ## Contributing
 
