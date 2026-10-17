@@ -26,7 +26,7 @@
   </defs>
 
   <!-- Original Folio icon, scaled down and positioned on the left -->
-  <g transform="translate(20 20) scale(0.3125)">
+  <g transform="translate(135 20) scale(0.3125)">
     <rect width="512" height="512" rx="115" fill="url(#bgGrad)" />
 
     <g filter="url(#shadow)">
@@ -39,7 +39,7 @@
   </g>
 
   <!-- Wordmark only: no tagline or supporting text -->
-  <text x="210"
+  <text x="325"
         y="125"
         font-family="Inter, Segoe UI, Arial, sans-serif"
         font-size="96"
