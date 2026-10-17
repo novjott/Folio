@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="680"
+     height="200"
+     viewBox="0 0 680 200"
+     role="img"
+     aria-labelledby="title desc">
+  <title id="title">Folio</title>
+  <desc id="desc">Folio app icon followed by the Folio wordmark.</desc>
+
+  <defs>
+    <!-- Original indigo-to-violet gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5" />
+      <stop offset="100%" stop-color="#7C3AED" />
+    </linearGradient>
+
+    <!-- Original page-fold gradient -->
+    <linearGradient id="foldGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C4B5FD" />
+      <stop offset="100%" stop-color="#EDE9FE" />
+    </linearGradient>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#1E1B4B" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Original Folio icon, scaled down and positioned on the left -->
+  <g transform="translate(20 20) scale(0.3125)">
+    <rect width="512" height="512" rx="115" fill="url(#bgGrad)" />
+
+    <g filter="url(#shadow)">
+      <path d="M144 112 C144 98.745 154.745 88 168 88 H216 V424 H168 C154.745 424 144 413.255 144 400 V112 Z" fill="#FFFFFF" />
+      <path d="M240 88 H320 L384 152 V168 H240 V88 Z" fill="#FFFFFF" />
+      <path d="M320 88 L384 152 H336 C327.163 152 320 144.837 320 136 V88 Z" fill="url(#foldGrad)" />
+      <rect x="240" y="216" width="112" height="64" rx="12" fill="#FFFFFF" opacity="0.9" />
+      <circle cx="272" cy="368" r="24" fill="#A78BFA" />
+    </g>
+  </g>
+
+  <!-- Wordmark only: no tagline or supporting text -->
+  <text x="210"
+        y="125"
+        font-family="Inter, Segoe UI, Arial, sans-serif"
+        font-size="96"
+        font-weight="750"
+        letter-spacing="-3"
+        fill="#1E1B4B">Folio</text>
+</svg>
